@@ -2,7 +2,10 @@
 """
 Python script that fetches an URL with requests package
 """
+
 import requests
+
+
 
 if __name__ == "__main__":
     url = 'https://alu-intranet.hbtn.io/status'
