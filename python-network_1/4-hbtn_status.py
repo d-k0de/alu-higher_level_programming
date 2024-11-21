@@ -2,17 +2,15 @@
 """
 Python script that fetches an URL with requests package
 """
+
 import requests
 
+
 if __name__ == "__main__":
-    # Add headers to mimic a browser request
-    url = "https://alu-intranet.hbtn.io/status"
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36"
-    }
+    url = "http://0.0.0.0:5050/status"
     
     try:
-        response = requests.get(url, headers=headers)
+        response = requests.get(url)
         # Check if the status code is OK (200)
         if response.status_code == 200:
             print("Body response:")
