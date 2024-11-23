@@ -5,13 +5,14 @@
 """
 import urllib.request
 
+
 if __name__ == '__main__':
     # Create a request with a User-Agent header
     req = urllib.request.Request(
         'https://intranet.hbtn.io/status',
         headers={'User -Agent': 'Mozilla/5.0'}
-    )
-    
+        )
+
     try:
         with urllib.request.urlopen(req) as response:
             content = response.read()
